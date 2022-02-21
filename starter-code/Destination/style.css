@@ -13,7 +13,7 @@
 /* ########## NavBar ######### */
 .destination-full-background-desktop{
     height: 100vh;
-    background-image: url(/assets/destination/background-destination-desktop.jpg);
+    background-image: url(/starter-code/assets/destination/background-destination-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,14 +21,14 @@
 
 .destination-full-background-tablet{
     height: 100vh;
-    background-image: url(/assets/destination/background-destination-tablet.jpg);
+    background-image: url(/starter-code/assets/destination/background-destination-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .destination-full-background-mobile{
     height: 100vh;
-    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    background-image: url(/starter-code/assets/destination/background-destination-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: max-content;

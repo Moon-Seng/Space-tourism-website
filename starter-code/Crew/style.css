@@ -13,7 +13,7 @@
 /* ########## NavBar ######### */
 .destination-full-background-desktop{
     height: fit-content;
-    background-image: url(/assets/crew/background-crew-desktop.jpg);
+    background-image: url(/starter-code/assets/crew/background-crew-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -22,7 +22,7 @@
 
 .destination-full-background-tablet{
     height: fit-content;
-    background-image: url(/assets/crew/background-crew-tablet.jpg);
+    background-image: url(/starter-code/assets/crew/background-crew-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -30,7 +30,7 @@
 
 .destination-full-background-mobile{
     height: 100vh;
-    background-image: url(/assets/crew/background-crew-mobile.jpg);
+    background-image: url(/starter-code/assets/crew/background-crew-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -527,7 +527,7 @@ logo{
     }
 
     .crew-detail{
-        padding-left: 4rem;
+        padding-left: 0;
         margin-top: 2rem;
     }
 
@@ -560,7 +560,7 @@ logo{
 
 
     .slider ul{
-        margin-left: 4rem;
+        margin-left: 0;
         display: flex;
         list-style: none;
         padding: 0;

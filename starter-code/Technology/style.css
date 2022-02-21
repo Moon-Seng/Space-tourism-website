@@ -13,7 +13,7 @@
 /* ########## NavBar ######### */
 .destination-full-background-desktop{
     height: 100vh;
-    background-image: url(/assets/technology/background-technology-desktop.jpg);
+    background-image: url(/starter-code/assets/technology/background-technology-desktop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -21,7 +21,7 @@
 
 .destination-full-background-tablet{
     height: fit-content;
-    background-image: url(/assets/technology/background-technology-tablet.jpg);
+    background-image: url(/starter-code/assets/technology/background-technology-tablet.jpg);
     background-repeat: no-repeat;
     background-size:auto;
     overflow: hidden;
@@ -29,7 +29,7 @@
 
 .destination-full-background-mobile{
     height: max-content;
-    background-image: url(/assets/technology/background-technology-mobile.jpg);
+    background-image: url(/starter-code/assets/technology/background-technology-mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -37,7 +37,7 @@
 .Technology-full-background-tablet{
     align-items: center;
     min-height: 310px;
-    background-image: url(/assets/technology/image-launch-vehicle-landscape.jpg);
+    background-image: url(/starter-code/assets/technology/image-launch-vehicle-landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2rem 0;
@@ -46,7 +46,7 @@
 .Technology-full-background-mobile{
     align-items: center;
     min-height: 170px;
-    background-image: url(/assets/technology/image-launch-vehicle-landscape.jpg);
+    background-image: url(/starter-code/assets/technology/image-launch-vehicle-landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2rem 0;
@@ -55,7 +55,7 @@
 .Technology-full-spaceport-background-tablet{
     align-items: center;
     min-height: 310px;
-    background-image: url(/assets/technology/image-spaceport-landscape.jpg);
+    background-image: url(/starter-code/assets/technology/image-spaceport-landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2rem 0;
@@ -64,7 +64,7 @@
 .Technology-full-spaceport-background-mobile{
     align-items: center;
     min-height: 170px;
-    background-image: url(/assets/technology/image-spaceport-landscape.jpg);
+    background-image: url(/starter-code/assets/technology/image-spaceport-landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2rem 0;
@@ -73,7 +73,7 @@
 .Technology-full-capsule-background-tablet{
     align-items: center;
     min-height: 310px;
-    background-image: url(/assets/technology/image-space-capsule-landscape.jpg);
+    background-image: url(/starter-code/assets/technology/image-space-capsule-landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2rem 0;
@@ -82,7 +82,7 @@
 .Technology-full-capsule-background-mobile{
     align-items: center;
     min-height: 170px;
-    background-image: url(/assets/technology/image-space-capsule-landscape.jpg);
+    background-image: url(/starter-code/assets/technology/image-space-capsule-landscape.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 2rem 0;
