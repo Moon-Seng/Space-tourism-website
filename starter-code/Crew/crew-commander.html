@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Space tourism website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+</head>
+<body>
+
+
+
+  <div id="background" class="text-white w-100">
+
+    
+    <div class="main-navbar">
+      <nav>
+        <a class="logo" href="/Home/index.html">
+          <img src="/assets/shared/logo.svg" alt="">
+        </a>
+  
+        <div class="line-section">
+          <span class="line-box">
+            <hr>
+          </span>
+        </div>
+
+        <button class="open-button" id="open-button" type="button">
+          <i data-feather="menu" class="text-white"></i>
+        </button>
+  
+  
+        <div class="navbar-menu " id="menu">
+          <ul class="nav-items">
+            <div class="w-100 menu-button">
+              <button id="close-button" class="close-button"type="button">
+                <i data-feather="x" class="text-white"></i>
+              </button>
+            </div>
+
+            <li class="nav-item">
+              <a class="nav-a" aria-current="page" href="/Home/index.html"><span>00</span> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-a" href="/Destination/destination-moon.html"><span>01</span> Destination</a>
+            </li>
+            <li class="nav-item link-active-mobile">
+              <a class="nav-a link-active" href="/Crew/crew-commander.html"><span>02</span> Crew</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-a" href="/Technology/technology-vehicle.html" ><span>03</span> Technology</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+   
+    <div class="container-lg container-fluid">
+      <div class="title">
+        <span>02</span><h1>Meet your crew</h1>
+      </div>
+      <div class="layout-row">
+        
+        <div class="col-12 col-lg-6 order-1 order-md-0">
+
+          <div class="crew-text">
+  
+  
+            <div class="detail-row">
+              <div class="crew-detail order-1 order-md-0">
+                <h2>Commander</h2>
+                <h1>Douglas Hurley</h1>
+                <p>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot 
+                  and former NASA astronaut. He launched into space for the third time as 
+                  commander of Crew Dragon Demo-2.
+                </p>
+              </div>
+  
+              <div class="slider order-0 order-md-1">
+                <ul>
+                  <li><a href="/Crew/crew-commander.html"><i data-feather="circle" class="dots dots-active"></i></a></li>
+                  <li><a href="/Crew/crew-specialist.html"><i data-feather="circle" class="dots"></i></a></li>
+                  <li><a href="/Crew/crew-pilot.html"><i data-feather="circle" class="dots"></i></a></li>
+                  <li><a href="/Crew/crew-engineer.html"><i data-feather="circle" class="dots"></i></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        
+        <div class="col-12 col-lg-6 order-0 order-md-1 text-center">
+          <img class="crew-img" src="/assets/crew/image-douglas-hurley.webp" alt="">
+          <hr class="d-block m-0 d-md-none">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script>
+feather.replace()
+  </script>
+</body>
+</html>

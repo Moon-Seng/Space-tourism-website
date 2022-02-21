@@ -1,0 +1,895 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box !important;
+    font-family: 'Barlow', sans-serif;
+ 
+}
+
+/* Start Home Page*/
+  
+/* ########## NavBar ######### */
+.destination-full-background-desktop{
+    height: 100vh;
+    background-image: url(/assets/destination/background-destination-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.destination-full-background-tablet{
+    height: 100vh;
+    background-image: url(/assets/destination/background-destination-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.destination-full-background-mobile{
+    height: 100vh;
+    background-image: url(/assets/destination/background-destination-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: max-content;
+}
+
+.nav-a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.main-navbar{
+        width: 100%;
+        margin: 0;
+}
+
+.line-box hr{
+    width: 473px;
+    height: 1px;
+    opacity: 0.5;
+}
+
+nav button {
+    display: none;
+}
+
+logo{
+    height: 100%;
+}
+
+.line-section{
+    display: none;
+}
+
+.menu-button{
+    display: none;
+}
+.navbar-menu{
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(41.55px);
+    z-index: 0;
+}
+
+.nav-items{
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+    color: white;
+}
+
+.nav-a span{
+    margin-right: 4px;
+    font-weight: bold;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.link-active{
+    border-bottom: 2px solid white ;
+}
+
+/* Moon Page */
+/* Title */
+.title {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+    margin-top: 3rem;
+}
+
+.title span{
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    color: white;
+    opacity: 0.25;
+}
+
+.title h1{
+    font-size: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
+/* Image and Text */
+
+.moon-text{
+    max-width: 100% ;
+}
+
+.tab ul{
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.tab ul li{
+    margin-right: 2rem;
+}
+
+.tab ul li a {
+    padding-bottom: 1rem;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+    letter-spacing: 2.7px;
+    color: #D0D6F9;
+    text-transform: uppercase;
+}
+
+.tab ul li a:hover{
+    border-bottom: 2px solid #979797;
+}
+
+.tab-active{
+    color: white !important;
+    border-bottom: 2px solid white;
+}
+
+/* Detail */
+
+.detail h1{
+    margin: 2rem 0;
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.detail p{
+    color: #D0D6F9;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 3rem;
+    font-family: 'Barlow', sans-serif;
+}
+
+.moon-data{
+    display: flex;
+
+}
+
+.moon-data p{
+    font-size: 14px;
+    letter-spacing: 2.36px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.moon-data h2{
+    margin-top: 0.5rem;
+    font-family: 'Bellefair', serif;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.tab-active{
+    color: white !important;
+    border-bottom: 2px solid white;
+}
+
+    
+
+@media screen and (max-width: 765px) {
+
+    /* NavBar */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        align-items: center;
+    }
+    
+    .logo{
+        padding-left: 1rem;
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    .open-button{
+        border: none;
+        background-color: transparent;
+        font-weight: 400;
+        padding: 1rem;
+    }
+
+    .navbar-menu{
+        display: none;
+        transition: 1000ms;
+    }
+    
+    .open-menu{
+        display: block;
+        width: 70%;
+        height:100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .close-menu{
+        display: none;
+    }
+
+    .nav-items{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .close-button{
+        margin-top: 1rem;
+        float: right;
+        border: none;
+        background-color: transparent;
+        font-weight: 400;
+        padding: 1rem;
+    }
+
+    .nav-item:nth-child(2){
+        margin-top: 2rem;
+    }
+
+    .nav-item{
+        padding: 1rem 1rem 1rem 2rem;
+    }
+
+    .nav-a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        font-size: 16px;
+    }
+
+    .link-active{
+        border: none;
+    }
+    
+    .link-active-mobile{
+        border-right: 2px solid white;
+    }
+
+    /* Title */
+    .title{
+        margin: 1rem auto;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .title span{
+        font-size: 16px;
+    }
+
+    .title h1{
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        margin-left: 1rem;
+    }
+
+    /* Moon Image and Text */
+
+    .moon-img img{
+        margin: 1rem;
+        width: 170px;
+        height: 170px;
+    }
+
+    .moon-text{
+        width: 327px;
+        margin: auto;
+    }
+
+    .tab ul{
+        justify-content: center;
+    }
+
+    .tab ul li{
+        margin-right: 1rem;
+    }
+
+    .tab ul li a{
+        font-size: 14px;
+    }
+
+    /* Detail */
+    .detail{
+        text-align: center;
+    }
+
+    .detail h1{
+        font-size: 56px;
+    }
+
+    .detail p{
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    /* Moon Data */
+
+    .moon-data{
+        flex-direction: column;
+    }
+
+    .moon-data p{
+        font-size: 14px;
+    }
+
+    .moon-data .col-12{
+        margin: 1rem 0;
+    }
+
+
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 1rem 2rem; 
+    }
+    
+
+    .navbar-menu{
+        justify-content: space-around;
+        height: 96px;
+        width: 450px;
+    }
+    
+    .nav-items{
+        height: 96px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .nav-item{
+        height: 96px;
+        /* padding: 0 1rem; */
+        z-index: 4;
+        font-size: 14px;
+        display: flex;
+    }
+
+    .nav-a{
+        padding: 2rem 1rem 2rem 1rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        font-size: 12px;
+    }
+
+    .nav-a span{
+        display: none;
+    }
+
+    .nav-a:hover{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    /* Title */
+
+    .title{
+        padding: 0;
+    }
+
+    .title span{
+        font-size: 20px;
+        margin-left: 2rem;
+    }
+
+    .title h1{
+        margin-left: 1rem;
+        font-size: 20px;
+    }
+    
+    /* Moon Text and Img*/
+
+    .moon-img img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .moon-text{
+        text-align: center;
+    }
+
+    .tab{
+        margin-top: 4rem;
+    }
+
+    .tab ul{
+        justify-content: center;
+    }
+
+    /* Detail */
+
+    .detail{
+        width: 573px;
+        margin: auto;
+    }
+
+    .detail h1{
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+
+    .detail p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    /* Moon Data */
+
+    .moon-data p{ 
+        font-size: 14px;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+    nav{
+        padding-top: 1rem;
+    }
+    .navbar-menu{
+        width: 850px;
+    }
+
+    .nav-item{
+        padding: 0 2rem;
+    }
+
+    .nav-a{
+        font-size: 15px;
+    }
+
+    /* Index Page */
+    .index-page{
+        height: 90%;
+    }
+
+    .index-page-row{
+        justify-content: space-around;
+        height: 90%;
+    }
+
+    /* Title */
+
+    .title{
+        padding: 0;
+    }
+
+    .title span{
+        font-size: 20px;
+        margin-left: 2rem;
+    }
+
+    .title h1{
+        margin-left: 1rem;
+        font-size: 20px;
+    }
+    
+    /* Moon Text and Img*/
+
+    .moon-img img{
+        width: 350px;
+        height: 350px;
+    }
+
+    .moon-text{
+        text-align: left;
+    }
+
+    .tab{
+        margin-top: 4rem;
+    }
+
+    .tab ul{
+        justify-content: left;
+    }
+
+    /* Detail */
+
+    .detail{
+        width: 405px;
+        margin: auto;
+    }
+
+    .detail h1{
+        font-size: 80px;
+        margin-bottom: 0;
+    }
+
+    .detail p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    /* Moon Data */
+
+    .moon-data p{ 
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (width: 1440px) {
+    nav{
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 2rem 3rem; 
+    }
+    
+    .line-section{
+        display: block;
+        margin-top: -32px;
+        width: 473px;
+        position: relative;
+    }
+
+    .line-box{
+        position: absolute;
+        margin-left: 2rem;
+        z-index: 4;
+    }
+
+    .navbar-menu{
+        justify-content: space-around;
+        height: 96px;
+        width: 830px;
+        
+    }
+    
+    .nav-items{
+        height: 96px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .nav-item{
+        padding-right: 2rem;
+        padding-left: 2rem;
+        z-index: 4;
+        font-size: 16px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-a span{
+        display: inline-block;
+    }
+    
+    .nav-a{
+        font-size: 16px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: 400ms;
+    }
+    
+    .nav-a:hover{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    /* Moon Page */
+    /* Title */
+    .title {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        padding-left: 5rem;
+        margin-top: 3rem;
+    }
+
+    .title span{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 4.725px;
+        color: white;
+        opacity: 0.25;
+    }
+    
+    .title h1{
+        font-size: 28px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4.72px;
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+
+    /* Image and Text */
+
+    .moon-img img{
+        width: 445px;
+        height: 445px;
+    }
+
+    .moon-text{
+        max-width: 445px ;
+    }
+
+    .tab ul{
+        display: flex;
+        padding: 0;
+        list-style: none;
+    }
+
+    .tab ul li{
+        margin-right: 2rem;
+    }
+    
+    .tab ul li a {
+        padding-bottom: 1rem;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
+
+    .tab-active{
+        color: white !important;
+        border-bottom: 2px solid white;
+    }
+
+    /* Detail */
+
+    .detail h1{
+        margin: 2rem 0;
+        font-family: 'Bellefair', serif;
+        font-size: 100px;
+        text-transform: uppercase;
+    }
+
+    .detail p{
+        color: #D0D6F9;
+        font-size: 18px;
+        line-height: 32px;
+        margin-bottom: 3rem;
+        font-family: 'Barlow', sans-serif;
+    }
+
+    .moon-data{
+        display: flex;
+
+    }
+
+    .moon-data p{
+        font-size: 14px;
+        letter-spacing: 2.36px;
+        text-transform: uppercase;
+        margin: 0;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .moon-data h2{
+        margin-top: 0.5rem;
+        font-family: 'Bellefair', serif;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    
+}
+
+
+@media screen and (min-width: 1445px) {
+    nav{
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 2rem 3rem; 
+        margin-left: 4rem;
+    }
+
+    .line-section{
+        display: none;
+    }
+
+    .navbar-menu{
+        justify-content: space-around;
+        height: 96px;
+        width: 1240px;
+        
+    }
+    
+    .nav-items{
+        height: 96px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .nav-item{
+        padding-right: 2rem 3rem;
+        padding-left: 2rem ; 
+        z-index: 4;
+    }
+
+    .nav-a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        font-size: 16px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav-a span{
+        display: inline-block;
+    }
+
+    /* Moon Page */
+    /* Title */
+    .title {
+        margin-bottom:0;
+        display: flex;
+        align-items: center;
+        padding-left: 5rem;
+        margin-top: 3rem;
+    }
+
+    .title span{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        letter-spacing: 4.725px;
+        color: white;
+        opacity: 0.25;
+    }
+    
+    .title h1{
+        font-size: 36px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4.72px;
+        margin-bottom: 0;
+        margin-left: 2rem;
+    }
+
+    /* Image and Text */
+
+    .moon-img img{
+        width: 566px;
+        height: 566px;
+    }
+    
+
+    .moon-text{
+        width: 100%;
+    }
+
+    .tab ul{
+        display: flex;
+        padding: 0;
+        list-style: none;
+    }
+
+    .tab ul li{
+        margin-right: 2rem;
+    }
+    
+    .tab ul li a {
+        padding-bottom: 1rem;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        color: #D0D6F9;
+        text-transform: uppercase;
+    }
+
+    /* Detail */
+
+    .detail{
+        margin: 0;
+    }
+
+    .detail h1{
+        margin-top: 2rem;
+        font-family: 'Bellefair', serif;
+        font-size: 140px;
+        text-transform: uppercase;
+    }
+
+    .detail p{
+        color: #D0D6F9;
+        font-size: 22px;
+        line-height: 46px;
+        margin-bottom: 3rem;
+        font-family: 'Barlow', sans-serif;
+        width: 560px;
+    }
+
+    .moon-data{
+        display: flex;
+
+    }
+
+    .moon-data p{
+        font-size: 16px;
+        letter-spacing: 2.36px;
+        text-transform: uppercase;
+        margin: 0;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .moon-data h2{
+        margin-top: 0.5rem;
+        font-family: 'Bellefair', serif;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+}
+/* End Home Page*/
+
+
+

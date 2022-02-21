@@ -1,0 +1,969 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box !important;
+    font-family: 'Barlow', sans-serif;
+ 
+}
+
+/* Start Home Page*/
+  
+/* ########## NavBar ######### */
+.destination-full-background-desktop{
+    height: fit-content;
+    background-image: url(/assets/crew/background-crew-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.destination-full-background-tablet{
+    height: fit-content;
+    background-image: url(/assets/crew/background-crew-tablet.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.destination-full-background-mobile{
+    height: 100vh;
+    background-image: url(/assets/crew/background-crew-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav-a:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.main-navbar{
+        width: 100%;
+        margin: 0;
+}
+
+.line-box hr{
+    width: 473px;
+    height: 1px;
+    opacity: 0.5;
+}
+
+nav button {
+    display: none;
+}
+
+logo{
+    height: 100%;
+}
+
+.line-section{
+    display: none;
+}
+
+.menu-button{
+    display: none;
+}
+.navbar-menu{
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(41.55px);
+    z-index: 5;
+}
+
+.nav-items{
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 3;
+    color: white;
+}
+
+.nav-a span{
+    margin-right: 4px;
+    font-weight: bold;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* Crew Page */
+/* Title */
+.title {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+
+}
+
+.title span{
+    font-family: Barlow Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 4.725px;
+    color: white;
+    opacity: 0.25;
+}
+
+.title h1{
+    font-size: 28px;
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+    margin-bottom: 0;
+    margin-left: 1rem;
+}
+
+.link-active{
+    border-bottom: 2px solid white ;
+}
+
+/* Crew Page */
+.layout-row{
+    display: flex;
+    margin-top: 3rem;
+}
+
+/* crew-text */
+.crew-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+/* Crew Detail */
+
+.detail-row{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.crew-detail{
+    padding-left: 4rem;
+    margin-top: 2rem;
+}
+
+.crew-detail h2{
+    font-size: 32px;
+    opacity: .5;
+    text-transform: uppercase;
+    font-family: 'Bellefair', serif;
+}
+
+.crew-detail h1{
+    text-transform: uppercase;
+    font-size: 56px;
+    font-family: 'Bellefair', serif;
+    margin: 1rem 0;
+}
+
+.crew-detail p{
+    width: 444px;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+/* Slider */
+
+
+.slider ul{
+    margin-left: 4rem;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.slider ul li{
+    margin: 1rem 1rem 1rem 0;
+}
+
+.dots{
+    fill: white;
+    opacity: 17%;
+    width: 15px;
+    height: 15px;
+    stroke-width: 0;
+    transition: 500ms;
+}
+
+.dots:hover{
+    opacity: 50%;
+}
+
+.dots.dots-active{
+    opacity: 100%;
+}
+
+.crew-img{
+    width: 568px;
+    height: 712px;
+}
+
+
+
+
+
+@media screen and (max-width: 765px) {
+
+    /* NavBar */
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+        align-items: center;
+    }
+    
+    .logo{
+        padding-left: 1rem;
+    }
+
+    .logo img{
+        width: 40px;
+        height: 40px;
+    }
+
+    nav button {
+        display: block;
+    }
+
+    .open-button{
+        border: none;
+        background-color: transparent;
+        font-weight: 400;
+        padding: 1rem;
+    }
+
+    .navbar-menu{
+        display: none;
+        transition: 1000ms;
+    }
+    
+    .open-menu{
+        display: block;
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-button{
+        display: block;
+    }
+
+    .close-menu{
+        display: none;
+    }
+
+    .nav-items{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .close-button{
+        margin-top: 1rem;
+        float: right;
+        border: none;
+        background-color: transparent;
+        font-weight: 400;
+        padding: 1rem;
+    }
+
+    .nav-item:nth-child(2){
+        margin-top: 2rem;
+    }
+
+    .nav-item{
+        padding: 1rem 1rem 1rem 2rem;
+    }
+
+    .nav-a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        font-size: 16px;
+    }
+
+    .link-active{
+        border: none;
+    }
+    
+    .link-active-mobile{
+        border-right: 2px solid white;
+    }
+
+    /* Crew Page */
+    /* Title */
+    .title {
+        margin-top: 1rem;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .title span{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        color: white;
+        opacity: 0.25;
+    }
+
+    .title h1{
+        font-size: 20px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4.72px;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+
+    /* Crew Page */
+    .layout-row{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+
+    /* crew-text */
+    .crew-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    /* Crew Detail */
+
+    .detail-row{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crew-detail{
+        padding-left: 0;
+        margin-top: 0;
+    }
+
+    .crew-detail h2{
+        padding: 0;
+        font-size: 16px;
+        opacity: .5;
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+    }
+
+    .crew-detail h1{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-family: 'Bellefair', serif;
+        margin: .5rem 0 1rem 0;
+    }
+
+    .crew-detail p{
+        width: 327px;
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .crew-img{
+        width: 177px;
+        height: 222px;
+    }
+
+    /* Slider */
+
+
+    .slider ul{
+        margin-left: 0;
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .slider ul li{
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .dots{
+        width: 10px;
+        height: 10px;
+    }
+
+    
+}
+
+@media screen and (min-width: 768px) {
+    nav{
+        padding-top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 1rem 2rem; 
+    }
+    
+
+    .navbar-menu{
+        justify-content: space-around;
+        height: 96px;
+        width: 450px;
+    }
+    
+    .nav-items{
+        height: 96px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .nav-item{
+        height: 96px;
+        /* padding: 0 1rem; */
+        z-index: 4;
+        font-size: 14px;
+        display: flex;
+    }
+
+    .nav-a{
+        padding: 2rem 1rem 2rem 1rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        font-size: 12px;
+    }
+
+    .nav-a span{
+        display: none;
+    }
+
+    .nav-a:hover{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    /* Crew Page */
+    /* Title */
+    .title {
+        margin-top: 2rem;
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+
+    }
+
+    .title span{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 3.38px;
+        color: white;
+        opacity: 0.25;
+    }
+
+    .title h1{
+        font-size: 20px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4.72px;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+    .link-active{
+        border-bottom: 2px solid white ;
+    }
+
+    /* Crew Page */
+    .layout-row{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    /* crew-text */
+    .crew-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    /* Crew Detail */
+
+    .detail-row{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .crew-detail{
+        padding-left: 4rem;
+        margin-top: 2rem;
+    }
+
+    .crew-detail h2{
+        font-size: 24px;
+        opacity: .5;
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+    }
+
+    .crew-detail h1{
+        text-transform: uppercase;
+        font-size: 40px;
+        font-family: 'Bellefair', serif;
+        margin: 1rem 0;
+    }
+
+    .crew-detail p{
+        width: 458px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .crew-img{
+        width: 456px;
+        height: 572px;
+    }
+
+    /* Slider */
+
+
+    .slider ul{
+        margin-left: 4rem;
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .slider ul li{
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .dots{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    nav{
+        padding-top: 1rem;
+    }
+    .navbar-menu{
+        width: 850px;
+    }
+
+    .nav-item{
+        padding: 0 2rem;
+    }
+
+    .nav-a{
+        font-size: 15px;
+    }
+
+    /* Index Page */
+    .index-page{
+        height: 90%;
+    }
+
+    .index-page-row{
+        justify-content: space-around;
+        height: 90%;
+    }
+
+    
+}
+
+@media screen and (width: 1440px) {
+    nav{
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 2rem 3rem; 
+    }
+    
+    .line-section{
+        display: block;
+        margin-top: -32px;
+        width: 473px;
+        position: relative;
+    }
+
+    .line-box{
+        position: absolute;
+        margin-left: 2rem;
+        z-index: 4;
+    }
+
+    .navbar-menu{
+        justify-content: space-around;
+        height: 96px;
+        width: 830px;
+        
+    }
+    
+    .nav-items{
+        height: 96px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .nav-item{
+        padding-right: 2rem;
+        padding-left: 2rem;
+        z-index: 4;
+        font-size: 16px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-a span{
+        display: inline-block;
+    }
+    
+    .nav-a{
+        font-size: 16px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: 400ms;
+    }
+    
+    .nav-a:hover{
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+
+    /* Crew Page */ 
+    /* Title */
+    .title {
+
+        margin:2rem 0;
+        display: flex;
+        align-items: center;
+        padding-left: 2rem;
+
+    }
+
+    .title span{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 4.725px;
+        color: white;
+        opacity: 0.25;
+    }
+
+    .title h1{
+        font-size: 28px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4.72px;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+    .link-active{
+        border-bottom: 2px solid white ;
+    }
+
+    /* Crew Page */
+    .layout-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+
+    /* crew-text */
+    .crew-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    /* Crew Detail */
+
+    .detail-row{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items:flex-start;
+    }
+
+    .crew-detail{
+        padding-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    .crew-detail h2{
+        font-size: 32px;
+        opacity: .5;
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+    }
+
+    .crew-detail h1{
+        text-transform: uppercase;
+        font-size: 56px;
+        font-family: 'Bellefair', serif;
+        margin: 1rem 0;
+    }
+
+    .crew-detail p{
+        width: 444px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    .crew-img{
+        margin-top: -6rem;
+        width: 568px;
+        height: 712px;
+    }
+
+    /* Slider */
+    .slider ul{
+        margin-left: 2rem;
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .slider ul li{
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .dots{
+        fill: white;
+        opacity: 17%;
+        width: 15px;
+        height: 15px;
+        stroke-width: 0;
+    }
+
+    .dots.dots-active{
+        opacity: 100%;
+
+    }
+
+
+    
+    
+}
+
+
+@media screen and (min-width: 1445px) {
+    nav{
+        padding-top: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo{
+        padding: 2rem 3rem; 
+        margin-left: 4rem;
+    }
+
+    .line-section{
+        display: none;
+    }
+
+    .navbar-menu{
+        justify-content: space-around;
+        height: 96px;
+        width: 1240px;
+        
+    }
+    
+    .nav-items{
+        height: 96px;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .nav-item{
+        padding-right: 2rem 3rem;
+        padding-left: 2rem ; 
+        z-index: 4;
+    }
+
+    .nav-a{
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: 'Barlow Condensed', sans-serif;
+        letter-spacing: 2.7px;
+        font-size: 16px;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .nav-a span{
+        display: inline-block;
+    }
+
+    /* Crew Page */ 
+    /* Title */
+    .title {
+        margin:1rem 0;
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+
+    }
+
+    .title span{
+        font-family: Barlow Condensed;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        letter-spacing: 4.725px;
+        color: white;
+        opacity: 0.25;
+    }
+
+    .title h1{
+        font-size: 34px;
+        font-family: 'Barlow Condensed', sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 4.72px;
+        margin-bottom: 0;
+        margin-left: 1rem;
+    }
+
+    .link-active{
+        border-bottom: 2px solid white ;
+    }
+
+    /* Crew Page */
+    .layout-row{
+        display: flex;
+        flex-direction: row;
+        margin-top: 3rem;
+    }
+
+    /* crew-text */
+    .crew-text{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    /* Crew Detail */
+
+    .detail-row{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items:flex-start;
+    }
+
+    .crew-detail{
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+
+    .crew-detail h2{
+        font-size: 46px;
+        opacity: .5;
+        text-transform: uppercase;
+        font-family: 'Bellefair', serif;
+    }
+
+    .crew-detail h1{
+        text-transform: uppercase;
+        font-size: 70px;
+        font-family: 'Bellefair', serif;
+        margin: 1rem 0;
+    }
+
+    .crew-detail p{
+        width: 576px;
+        font-size: 24px;
+        line-height: 46px;
+    }
+
+    .crew-img{
+        margin-top: -6rem;
+        width: 672px;
+        height: 892px;
+    }
+
+    /* Slider */
+    .slider ul{
+        margin-left: 0;
+        display: flex;
+        list-style: none;
+        padding: 0;
+    }
+
+    .slider ul li{
+        margin: 1rem 1rem 1rem 0;
+    }
+
+    .dots{
+        fill: white;
+        opacity: 17%;
+        width: 20px;
+        height: 20px;
+        stroke-width: 0;
+    }
+
+    .dots.dots-active{
+        opacity: 100%;
+
+    }
+
+
+
+    
+}
+/* End Home Page*/
+
+/* Start Destination Page*/
+
+
